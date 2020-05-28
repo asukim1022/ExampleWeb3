@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {margin:0;padding:0; font-family:san-serif;}
+li{list-style:none;}
+a{text-decoration:none;}
+
+body {overflow-x: hidden;}
+
+header{padding:0; margin:0; height:70px;  background-color:#000000;}
+header h1{margin:0 auto; width:1100px; float:left; padding-left:40px; font-size:20px; color:#fff; padding-top:20px;}
+
+/** banner **/
+.wrapper{background:url(../images/bg.jpg) no-repeat; background-size:cover; height:auto; padding-bottom: 80px;}
+.wrapper .banner{}
+.wrapper .banner div{margin:0 auto;}
+.wrapper .banner div h2{text-align:center; font-size:25px; color:#DCDCDC; line-height:45px; padding-top:100px; font-weight:100;}
+.wrapper .banner div a{border-radius:6px; width:250px; height:60px; background-color:#F0F; display:block; color:#fff; font-size:25px; line-height:53px; text-align:center; font-weight:bold; margin:0 auto; margin-top:80px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.wrapper .banner div a:hover{background-color:#F9C;}
+.wrapper .banner div .text1{color:#fff;}
+.wrapper .banner div span{text-decoration:underline; letter-spacing:0.00005em;}
+
+/** own **/
+.wrapper div.own{width:90%; margin:0 auto; margin-top:120px; position: relative; display: inline-block; left: 50%; margin-left: -45%; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.wrapper div.own ul{width:100%;}
+.wrapper div.own  ul li{widht:330px; height:480px; float:left; background-color:#fff; border-radius:7px; margin-right:30px; margin-bottom:30px; margin-bottom: 30px; width: 31%; margin: 1%; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.wrapper div.own ul li.3n{margin-right:0px;}
+.wrapper div.own ul li img{width: 100%; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.wrapper div.own ul li p{color:#999; padding-top:40px; text-align:center; line-height:30px; font-size:18px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.wrapper div.own ul li a{margin:0 auto; display:block; width:178px; height:58px; border-radius:30px; font-size:17px; color:#fff; text-align:center; line-height:54px; background-color:#f0f; font-weight:bold;margin-top:30px; border-radius:7px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.wrapper div.own ul li a:hover {background-color: #b13ab1;}
+
+/** two **/
+div.two{background-color:#0f1116; height:auto; display: inline-block; position: relative; padding-bottom: 40px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+div.two ul{margin:0 auto; width:90%; position: relative; display: inline-block; left: 50%; margin-left: -45%; -webkit-transition: all 0.3s; transition: all 0.3s;}
+div.two ul li{float:left; margin-top:100px; border-bottom:1px solid #999; padding-bottom:50px; width:40%; margin: 5%; position: relative; display: inline-block; -webkit-transition: all 0.3s; transition: all 0.3s;}
+div.two ul li img{float:left; margin-top:40px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+div.two ul li h2{float:left; color:#fff; font-size:35px; margin-top:40px; position: absolute; top: 0px; left: 80px; right: 0px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+div.two ul li p{color:#CCC; font-size:17px; padding-top:130px; padding-left:80px; line-height:38px; letter-spacing:-0.5px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+
+/** three **/
+.three{background-color:#f0f; height:100%; padding-bottom: 100px;}
+.three div{margin:0 auto;}
+.three div h2{text-align:center; padding-top:120px; font-weight:bold; color:#fff; font-size:38px;}
+.three div p{text-align:center; padding-top:30px; color:#fff; font-size:19px;}
+fieldset{width:80%; margin:0 auto; border:0px; padding-top:34px;}
+.form {position:relative; margin-top:40px;}
+input[type=text] {border-radius:4px; margin-bottom:0px; color:#666; font-size:15px; width:100%; height:44px;}
+input[value="Full Name"] {margin-bottom:20px; background-color:#fff;}
+input[value="Email Address"] {background-color:#fff; margin-bottom:20px;}
+input[value="Your Message"] {background-color:#fff;}
+textarea {width:100%; height:250px; border-radius:4px; color:#666; font-size:15px; font-size:15px; padding-top:10px; background-color:#fff;}
+label {display:none;}
+legend {display:none;}
+.btn {margin:0 auto; magin-top:35px; text-align:center;}
+button[type=submit] {width:140px; height:46px; border-radius:6px; color:#f0f; font-size:18px; text-align:center; margin-top:30px; border-radius:10px; border:1px solid #f0f; background-color:#fff;}
+
+/** footer **/
+footer{background-color:#333; height:100px;}
+footer div{width:600px; margin:0 auto;}
+footer div h2{color:#999; text-align:center; padding-top:35px; font-size:19px; font-weight:100;}
+
+
+@media screen and (max-width: 1200px) {
+    .wrapper div.own ul li a {width: 90%;}
+}
+
+@media screen and (max-width: 900px) {
+    div.two ul li img {float: none; position: absolute; left: 50%; margin-left: -30px; width: 60px;}
+    div.two ul li h2 {float: none; position: absolute; top: 120px; left: 10px; right: 10px; margin-top: 0px; text-align: center;}
+    div.two ul li p {padding-top: 230px; padding-left: 10px; padding-right: 10px; text-align: center;}
+    div.two ul li {left: 50%; margin-left: -45%; width: 90%; float: none;}
+    .wrapper div.own ul li {width: 45%; margin: 2.3%;}
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper div.own ul li {width: 90%; margin: 2.3%; height: 570px;}
+    .wrapper div.own {margin-left: -42%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
